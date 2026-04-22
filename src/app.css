@@ -1,0 +1,53 @@
+:root {
+    --black: #000000;
+    --bg: #121714;
+    --border: #78A1BB;
+    --primary: #14F5AA;
+    --dim: #2C7B61;
+    --secondary: #FF499E;
+    --accent: #FFC60A;
+    --progress: #FF499E;
+    --font-header: 3vmin;
+    --font-para: 2vmin;
+    --font-tiny: 1vmin;
+    --border-tile: 0.7vmin;
+    --border-small: 0.5vmin;
+    --border-hr: 0.4vmin;
+    color: var(--primary);
+    font-family: 'ProFont', monospace;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'ProFont';
+    src: url('/src/assets/ProFont.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.stripes {
+  background: repeating-linear-gradient(
+    -45deg,
+    #121714,
+    #121714 20px,
+    #1B221E 20px,
+    #1B221E 40px
+  );
+  animation: move-stripes 5s linear infinite;
+  background-size: 56.57px 56.57px;
+}
+
+@keyframes move-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 56.57px 0;
+  }
+}
