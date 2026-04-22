@@ -7,7 +7,7 @@
         <hr><img src={logo} alt="logo"><hr>
     </div>
     <div class="textbox">
-        <h1 class="text">welcome to my cool site :3</h1>
+        <h1 class="text">welcome to my cool site :)</h1>
         <p class="text">if you read this your cool</p>
     </div>
     <div class="links">
@@ -54,6 +54,7 @@
     .links {
         display: flex;
         justify-content: space-evenly;
+        font-size: var(--font-para);
     }
 
     a {
@@ -63,6 +64,6 @@
 
     h1 {font-size: var(--font-header);}
     p  {font-size: var(--font-para);}
-    img {height: 10vh; padding: 1vw;}
+    img {height: 10vmin; padding: 1vw;}
 
 </style>
