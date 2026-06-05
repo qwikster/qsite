@@ -1,25 +1,39 @@
 <script>
-    import logo from "/favicon.png"
-    import flag_ca from "/ca.svg"
-
     import Hi from "./lib/Hi.svelte";
+
+    let kikuri = false;
+    const logo1 = "/favicon.png";
+    const logo2 = "/kikuri.png";
+
+    $: source = kikuri ? logo2 : logo1
+    function chlogo() {
+      kikuri = !kikuri
+    }
 </script>
 
 <div class="content">
     <div class="header">
-        <h1>coolass logo here</h1>
+        <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+        <!-- svelte-ignore a11y_click_events_have_key_events -->
+        <div style="display: flex; align-items: center;">
+            <img src="{source}" alt="logo!" width="64px" on:click={chlogo} style="cursor: pointer;">
+            <span style="font-family: var(--ff-header); color: var(--accent)">󰜴</span>
+        </div>
+        <button class="projects">BLAG</button>
+        <button class="projects">PROJECTS</button>
     </div>
     <div class="panel">
         <Hi/>
         <p style="text-align: left;">
-            grrrr jappan 🇯🇵 is best country in teh world (sekai) !!!!🤬😡!!!👹🤬!!!!! west bAd grrrgghhhg japenis culture⛩🎎🎏 better than amrican🗽🍔👎!!! (&gt;~&lt;) vendor machine eveywhere 🗼and sakura trees are so 🌸 a e s t h e t i c 🌸 UwU if u hate it then your NOT a man of culture so shinē!!! ~hmph baka -_- 🏮
+            I can't take it any more. Among Us has singlehandedly ruined my life. The other day my teacher was teaching us Greek Mythology and he mentioned a pegasus and I immediately thought <i></i>'Pegasus? more like Mega Sus!!!!' and I've never wanted to kms more. I can't look at a vent without breaking down and fucking crying. I can't eat pasta without thinking 'IMPASTA??? THATS PRETTY SUS!!!!' Skit 4 by Kanye West. The lyrics ruined me. A Mongoose, or the 25th island of greece. The scientific name for pig. I can't fucking take it anymore.
         </p>
+        <p></p>
     </div>
 </div>
 
 <style>
     .content {
-        max-width: 900px;
+        max-width: 640px;
         margin-bottom: 30vh;
         margin-left: 20px;
         margin-right: 20px;
@@ -29,7 +43,7 @@
     .header {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         margin-bottom: var(--pad-ui);
     }
 
