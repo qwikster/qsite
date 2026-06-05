@@ -1,5 +1,5 @@
 <script>
-    import Hi from "./lib/Hi.svelte";
+    import Hi from "../lib/Hi.svelte";
 
     let kikuri = false;
     const logo1 = "/favicon.png";
@@ -63,10 +63,4 @@
         line-height: 1.3;
     }
 
-    h1 {
-        color: var(--col-header);
-        font-family: var(--ff-header), monospace;
-        font-size: var(--font-header);
-        margin: 0px;
-    }
 </style>
