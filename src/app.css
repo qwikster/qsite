@@ -1,27 +1,45 @@
 :root {
     --black: #000000;
-    --bg: #121714;
-    --border: #78A1BB;
-    --primary: #14F5AA;
-    --dim: #2C7B61;
+    --col-bg: #121714;
+    --col-bg2: #1B221E;
+    --col-error: #AA2222;
+    --col-error2: #66221E;
+    --col-border: #2C7B61;
+    --col-header: #14F5AA;
+    --col-body: #dedede;
+    --col-dim: #E2FBEB66;
     --secondary: #FF499E;
     --accent: #FFC60A;
-    --progress: #FF499E;
-    --font-header: 3vmin;
-    --font-para: 2vmin;
-    --font-tiny: 1vmin;
-    --border-tile: 0.7vmin;
-    --border-small: 0.5vmin;
-    --border-hr: 0.4vmin;
-    color: var(--primary);
-    font-family: 'ProFont', monospace;
+
+    --font-header: 20px;
+    --font-text: 16px;
+    --font-tiny: 12px;
+
+    --ff-header: 'ProFont';
+    --ff-body: 'ProFont';
+    --ff-info: 'ProFont';
+    --ff-mono: 'ProFont';
+
+    --border-panel: 3px;
+    --border-small: 2px;
+    --border-hr: 1px;
+
+    --round-panel: 12px;
+    --round-button: 4px;
+
+    --pad-ui: 8px;
+    --pad-text: 4px;
+    --pad-tiny: 2px;
 }
 
 body {
-    margin: 0;
-    display: grid;
-    place-items: center;
+    display: flex;
+    width: 100vw;
     min-height: 100vh;
+    margin: 0px;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 @font-face {
@@ -34,10 +52,10 @@ body {
 .stripes {
   background: repeating-linear-gradient(
     -45deg,
-    #121714,
-    #121714 20px,
-    #1B221E 20px,
-    #1B221E 40px
+    var(--col-bg),
+    var(--col-bg) 20px,
+    var(--col-bg2) 20px,
+    var(--col-bg2) 40px
   );
   animation: move-stripes 5s linear infinite;
   background-size: 56.57px 56.57px;

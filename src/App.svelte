@@ -4,79 +4,71 @@
 
 <div class="content">
     <div class="header">
-        <hr><div class="textbox">things</div><hr><img src={logo} alt="logo"><hr><div class="textbox">blag</div><hr>
+        <h1>header goes here ill fix it later</h1>
     </div>
-    <div class="textbox">
-        <h1 class="text">welcome to my cool site :)</h1>
-        <p class="text">this is a bunch of long text that i can put in the middle of the website to show the things that the text is saying like who i am and what the point of this site in and how much random shit i can type</p>
-        <div class="textbox">
-            <h1>links             (expand)</h1>
+    <div class="panel">
+        <div class="hi">
+            <span class="hi_hi"><b>hi,&nbsp;</b></span>
+            <span class="hi_i">i_</span>
+            <span class="hi_qwik"><b>qwik</b></span>
+            <span class="hi_hi">!</span>
         </div>
-        <div class="textbox">
-            <h1>88x31s             (expand)</h1>
-        </div>
-        <div class="textbox">
-            <h1>etc             (close)</h1>
-            <hr>
-            <p>ooo time zones and music player and uptime neat</p>
-        </div>
-        <p>i was going to put some scrolling icon buttons here to show cool things i use</p>
-    </div>
-    <div class="links">
-        <a href="https://youtube.com/@qwiksteryt">youtube!</a>
-        <a href="https://qwik.top">you are here!</a>
-        <a href="https://github.com/qwikster">github!</a>
+        <p>
+            I can't fucking take it any more. Among Us has singlehandedly ruined my life. The other day my teacher was teaching us Greek Mythology and he mentioned a pegasus and I immediately thought <i></i>'Pegasus? more like Mega Sus!!!!' and I've never wanted to kms more. I can't look at a vent without breaking down and fucking crying. I can't eat pasta without thinking 'IMPASTA??? THATS PRETTY SUS!!!!' Skit 4 by Kanye West. The lyrics ruined me. A Mongoose, or the 25th island of greece. The scientific name for pig. I can't fucking take it anymore.
+        </p>
+        <p>Please fucking end my suffering.</p>
     </div>
 </div>
 
 <style>
+    .content {
+        max-width: 900px;
+        margin-bottom: 30vh;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .header {
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        margin-bottom: var(--pad-ui);
     }
 
-    hr {
-        border-width: var(--border-small) 0px 0px 0px;
-        border-style: solid;
-        border-color: var(--secondary);
-        margin: 0px 1vw;
-        width: auto;
-        flex-grow: 1;
+    .panel {
+        border: var(--border-panel) solid var(--col-border);
+        padding: var(--pad-ui);
+        border-radius: var(--round-panel);
+        background-color: var(--col-bg);
     }
 
-    .textbox {
-        background-color: var(--bg);
-        padding: 1vmin;
-        margin-bottom: 2vmin;
-        border: var(--border-tile) solid var(--dim);
-
+    p {
+        color: var(--col-body);
+        font-family: var(--ff-body), monospace;
+        font-size: var(--font-text);
+        margin: 0px;
+        padding: 2px;
+        line-height: 1.3;
     }
 
-    .content {
-        margin-bottom: 50vh;
-    }
-
-    .text {
-        padding: 0px;
-        margin: 0.3rem 0px;
-        text-align: center;
-    }
-
-    .links {
+    .hi {
         display: flex;
-        justify-content: space-evenly;
-        font-size: var(--font-para);
+        color: var(--col-body);
+        font-family: var(--ff-body), monospace;
+        font-size: var(--font-header);
+        margin: 0px;
+        padding: 2px;
+        line-height: 1.3;
     }
 
-    a {
-        color: var(--accent);
+    .hi_hi { color: var(--col-body); }
+    .hi_i { color: var(--col-dim); }
+    .hi_qwik { color: var(--accent); }
 
+    h1 {
+        color: var(--col-header);
+        font-family: var(--ff-header), monospace;
+        font-size: var(--font-header);
+        margin: 0px;
     }
-
-    h1 {font-size: var(--font-header);}
-    p  {font-size: var(--font-para);}
-    img {height: 10vmin; padding: 1vw;}
-
 </style>
