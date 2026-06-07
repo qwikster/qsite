@@ -23,7 +23,7 @@
         display: flex;
         justify-content: space-between;
         color: var(--col-body);
-        font-family: var(--ff-body), monospace;
+        font-family: var(--ff-header), monospace;
         font-size: var(--font-header);
         margin: 0px;
         padding: 2px;

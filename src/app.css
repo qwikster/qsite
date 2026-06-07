@@ -2,30 +2,33 @@
     --black: #000000;
     --col-bg: #121714;
     --col-bg2: #1B221E;
+    --col-bg3: #224433;
     --col-error: #AA2222;
     --col-error2: #66221E;
     --col-border: #2C7B61;
+    --col-btnhover: #14F5AA99;
     --col-header: #14F5AA;
     --col-body: #dedede;
-    --col-dim: #E2FBEB66;
+    --col-dim: #E2FBEB88;
     --secondary: #FF499E;
     --accent: #FFC60A;
 
     --font-header: 20px;
-    --font-text: 16px;
-    --font-tiny: 12px;
+    --font-text: 18px;
+    --font-tiny: 14px;
 
     --ff-header: 'ProFont';
-    --ff-body: 'ProFont';
+    --ff-body: 'Exo2';
     --ff-info: 'ProFont';
     --ff-mono: 'ProFont';
+    --ff-button: 'ProFont';
 
     --border-panel: 3px;
     --border-small: 2px;
     --border-hr: 1px;
 
     --round-panel: 12px;
-    --round-button: 4px;
+    --round-button: 6px;
 
     --pad-ui: 8px;
     --pad-text: 4px;
@@ -47,6 +50,13 @@ body {
     src: url('/src/assets/ProFont.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('/src/assets/Exo2.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
 }
 
 .stripes {
