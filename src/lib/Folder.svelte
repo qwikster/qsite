@@ -1,6 +1,6 @@
 <script>
     export let name
-    let open = false
+    export let open = false
 </script>
 
 <div class="folder">
@@ -22,10 +22,7 @@
         flex-direction: column;
         border: var(--border-small) solid var(--col-border);
         border-radius: var(--round-panel);
-    }
-
-    .content {
-        padding: var(--pad-ui);
+        margin: var(--pad-ui) 0px;
     }
 
     button {
