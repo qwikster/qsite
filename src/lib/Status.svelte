@@ -39,7 +39,7 @@
     p {
         color: var(--col-dim);
         font-family: var(--ff-body), monospace;
-        font-size: var(--font-text);
+        font-size: var(--font-info);
         margin: 0px;
         padding: 2px;
         line-height: 1.3;
