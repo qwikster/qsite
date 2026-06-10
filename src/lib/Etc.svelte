@@ -2,6 +2,28 @@
   import { onMount } from "svelte";
   let time = $state(new Date());
 
+  let id = "loading"
+  let date = "loading"
+  let error = ""
+
+  onMount(async () => {
+    try {
+      const response = await fetch(
+        `https://api.github.com/repos/qwikster/qsite/commits`,
+        {headers: {"Accept": "application/vnd.github+json"}}
+      );
+      if (!response.ok) throw new Error(`failed to fetch GitHub info: ${response.statusText}`)
+      const data = await response.json();
+
+      if (data && data.length > 0) {
+        id = data[0].sha.substring(0, 7);
+        date = new Date(data[0].commit.author.date).toLocaleTimeString()  + " " + new Date(data[0].commit.author.date).toLocaleDateString()
+      }
+    } catch (err) {
+      error = err.message;
+    }
+  });
+
   onMount(() => {
     const interval = setInterval(() => {
       time = new Date();
@@ -11,6 +33,18 @@
 </script>
 
 <div class="etc">
+    <div class="item github">
+        <div>
+            commit <b class="time">{id}</b> at
+        </div>
+        <div>
+            <b class="time">{date}</b> on
+        </div>
+        <div class="git-link">
+            <span class="icon" style="color: #F2F5F3;"></span>
+            <b><a target="_blank" href="https://github.com/qwikster/qsite">qwikster/qsite</a></b>
+        </div>
+    </div>
     <div class="item timezone">
         <div class="tz">
             <span class="time">{time.toLocaleTimeString([], {timeZone: "America/Toronto", hour12: true, timeStyle: 'short'})}</span>
@@ -24,9 +58,6 @@
             <span class="time">{time.toLocaleTimeString([], {timeZone: "UTC", hour12: false})}</span>
             <span class="tz-title">UTC</span>
         </div>
-    </div>
-    <div class="item github">
-
     </div>
 </div>
 
@@ -63,4 +94,14 @@
         display: flex;
         justify-content: space-between;
     }
+
+    .git-link {
+        display: flex;
+        justify-content: center;
+        gap: var(--pad-text);
+        align-items: center;
+    }
+
+    .icon { font-size: var(--font-header); }
+    a { color: var(--col-hover); }
 </style>

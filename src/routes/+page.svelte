@@ -5,7 +5,6 @@
     import Hi from "../lib/Hi.svelte";
     import Links from "../lib/Links.svelte";
     import Skills from "../lib/Skills.svelte";
-    import Status from "../lib/Status.svelte";
 </script>
 
 <div class="content">
@@ -28,7 +27,6 @@
         <Folder name="etc" open=true>
             <Etc/>
         </Folder>
-        <Status/>
     </div>
 </div>
 
