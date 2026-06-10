@@ -16,7 +16,7 @@
 
     --bg-ok: #14F5A488;
     --bg-meh: #FFC60A88;
-    --bg-wait: #44554a88;
+    --bg-wait: #44554a;
     --bg-bad: #AA222288;
 
     --bg-0: #000000;
@@ -30,7 +30,8 @@
 
     --font-header: 20px;
     --font-text: 18px;
-    --font-tiny: 14px;
+    --font-small: 16px;
+    --font-tiny: 12px;
 
     --ff-header: 'ProFont';
     --ff-body: 'Exo2';

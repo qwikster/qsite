@@ -33,95 +33,120 @@
             Passionate about supporting and creating hardware or software that works
             for you, not to raise a company's net worth.
         </p>
-        <div class="skill-legend">
-            <div class="skill-desc">
-                <span class="skill-icon" style="color: var(--col-ok)"></span>
-                <span class="skill-key" style="color: var(--bg-ok)">good at!</span>
-            </div>
 
-            <div class="skill-desc">
-                <span class="skill-icon" style="color: var(--col-meh)">󰜥</span>
-                <span class="skill-key" style="color: var(--bg-meh)">will learn as needed</span>
-            </div>
-
-            <div class="skill-desc">
-                <span class="skill-icon" style="color: var(--col-wait)"></span>
-                <span class="skill-key" style="color: var(--bg-wait)">learning basics</span>
-            </div>
-
-            <div class="skill-desc">
-                <span class="skill-icon" style="color: var(--col-bad)"></span>
-                <span class="skill-key" style="color: var(--bg-bad)">prefer not to use</span>
-            </div>
-        </div>
         <div class="skills">
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-ok)"></span>
-                <span class="skill">Linux</span>
+            <div class="skill-tier">
+                <div class="skill-desc" style="color: var(--col-ok);">
+                    <div class="skill-icon"></div>
+                    <div class="skill-text">good at!</div>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-line" style="color: var(--bg-ok);">
+                        <span class="skill">aaaa</span>
+                        <span class="skill">aaaaaa</span>
+                        <span class="skill">aaaaaaaaa</span>
+                        <span class="skill">aaaaaaaa</span>
+                        <span class="skill">aaaa</span>
+                        <span class="skill">aaaaaaaaaaaaaa</span>
+                        <span class="skill">aaaaaaaa</span>
+                        <span class="skill">aaaaaaaaaaaaaaaaa</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-ok)"></span>
-                <span class="skill">Python</span>
+            <div class="skill-tier">
+                <div class="skill-desc" style="color: var(--col-meh);">
+                    <div class="skill-icon"></div>
+                    <div class="skill-text">learn as needed</div>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-line" style="color: var(--bg-meh);">
+                        <span class="skill">jjjjjjjjjjjjjjjj</span>
+                        <span class="skill">jjj</span>
+                        <span class="skill">jjjjjjjjjjj</span>
+                        <span class="skill">jjjjj</span>
+                        <span class="skill">jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</span>
+                        <span class="skill">jjjjjjjjjjjj</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-ok)"></span>
-                <span class="skill">HTML+CSS</span>
+            <div class="skill-tier">
+                <div class="skill-desc" style="color: var(--col-wait);">
+                    <div class="skill-icon"></div>
+                    <div class="skill-text">still learning</div>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-line" style="color: var(--bg-wait);">
+                        <span class="skill">eeeeee</span>
+                        <span class="skill">eeeeeeeee</span>
+                        <span class="skill">eeeeee</span>
+                        <span class="skill">eeeeeeee</span>
+                        <span class="skill">eeee</span>
+                        <span class="skill">eeeeeeeeeee</span>
+                        <span class="skill">eeeeee</span>
+                        <span class="skill">eeeeeeeeeeeeeeeeeeee</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-meh)">󰜥</span>
-                <span class="skill">Arduino</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-meh)">󰜥</span>
-                <span class="skill">Sysadmin</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-meh)">󰜥</span>
-                <span class="skill">Networking</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-meh)">󰜥</span>
-                <span class="skill">Svelte</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-meh)">󰜥</span>
-                <span class="skill">JavaScript</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-meh)">󰜥</span>
-                <span class="skill">Onshape</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-wait);"></span>
-                <span class="skill">C++</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-wait);"></span>
-                <span class="skill">Rust</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-wait);"></span>
-                <span class="skill">Engineering</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-wait);"></span>
-                <span class="skill">Auto Repair</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-bad);"></span>
-                <span class="skill">TypeScript</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-icon" style="color: var(--col-bad);"></span>
-                <span class="skill">React</span>
+            <div class="skill-tier">
+                <div class="skill-desc" style="color: var(--col-bad);">
+                    <div class="skill-icon"></div>
+                    <div class="skill-text">prefer not</div>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-line" style="color: var(--bg-bad);">
+                        <span class="skill">ggggggg</span>
+                        <span class="skill">ggggg</span>
+                        <span class="skill">ggg</span>
+                        <span class="skill">ggggg</span>
+                        <span class="skill">ggggggg</span>
+                        <span class="skill">gggg</span>
+                    </div>
+                </div>
             </div>
 
         </div>
+
         <p>my hands are typing words long words that will take up space wooords</p>
     </div>
 </div>
 
 <style>
+    .skills {
+        display: flex;
+        flex-direction: column;
+        margin: var(--pad-ui) 0px;
+        gap: var(--pad-text);
+    }
+
+    .skill-tier {
+        display: flex;
+    }
+
+    .skill-desc {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        background-color: var(--bg-0);
+        font-family: var(--ff-info);
+        font-size: var(--font-small);
+        border: 1px solid var(--bg-2);
+        border-radius: var(--border-panel);
+        padding: var(--pad-text);
+        margin-right: var(--pad-ui);
+        justify-content: center;
+    }
+
+    .skill {
+        background-color: var(--bg-2);
+        padding: var(--pad-tiny) var(--pad-text);
+        border: 1px solid var(--bg-4);
+        border-radius: var(--border-panel);
+        font-family: var(--ff-info);
+        font-size: var(--font-tiny);
+        display: inline-block;
+        margin-bottom: 1px;
+    }
+
     .content {
         max-width: 640px;
         margin-bottom: 30vh;
@@ -169,48 +194,6 @@
         font-family: var(--ff-header);
         font-size: var(--font-header);
         color: var(--col-accent);
-    }
-
-    .skill-legend {
-        display: flex;
-        gap: var(--pad-ui);
-        justify-content: center;
-        align-items: center;
-        padding: var(--pad-ui) 0px;
-    }
-
-    .skill-desc {
-        background-color: var(--bg-0);
-        font-family: var(--ff-info);
-        font-size: var(--font-tiny);
-        padding: 2px;
-        border-radius: var(--round-button);
-    }
-
-    .skill-key {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .skills {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 12px;
-        padding: var(--pad-text) 0px;
-    }
-
-    .skill-item {
-        color: var(--col-dim);
-        font-family: var(--ff-info);
-        font-size: var(--font-tiny);
-
-        display: flex;
-        flex-direction: column;
-        border: var(--border-small) dashed var(--col-border);
-        padding: 2px;
-        border-radius: var(--round-panel);
     }
 
     p {
