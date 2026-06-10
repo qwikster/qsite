@@ -15,8 +15,9 @@
             Passionate about supporting and creating hardware or software that works
             for you, not to raise a company's net worth.
         </p>
+        <Skills/>
         <Folder name="Links">
-            <Skills/>
+
         </Folder>
         <p>my hands are typing words long words that will take up space wooords</p>
     </div>
