@@ -1,17 +1,32 @@
 :root {
-    --black: #000000;
-    --col-bg: #121714;
-    --col-bg2: #1B221E;
-    --col-bg3: #224433;
-    --col-error: #AA2222;
-    --col-error2: #66221E;
-    --col-border: #2C7B61;
-    --col-btnhover: #14F5AA99;
-    --col-header: #14F5AA;
     --col-body: #dedede;
-    --col-dim: #E2FBEB88;
-    --secondary: #FF499E;
-    --accent: #FFC60A;
+    --col-dim: #7D8A81;
+    --col-secondary: #FF499E;
+    --col-accent: #FFC60A;
+
+    --col-header: #14F5AA;
+    --col-border: #2C7B61;
+    --col-hover: #14F5AA99;
+
+
+    --col-ok: #14F5AA;
+    --col-meh: #FFC60A;
+    --col-wait: #44554a;
+    --col-bad: #AA2222;
+
+    --bg-ok: #14F5A488;
+    --bg-meh: #FFC60A88;
+    --bg-wait: #44554a88;
+    --bg-bad: #AA222288;
+
+    --bg-0: #000000;
+    --bg-1: #121714;
+    --bg-2: #1B221E;
+    --bg-3: #293D3A;
+    --bg-4: #44554a;
+    --bg-hover: #224433;
+
+    --flag-ca: #D80621;
 
     --font-header: 20px;
     --font-text: 18px;
@@ -62,12 +77,23 @@ body {
 .stripes {
   background: repeating-linear-gradient(
     -45deg,
-    var(--col-bg),
-    var(--col-bg) 20px,
-    var(--col-bg2) 20px,
-    var(--col-bg2) 40px
+    var(--bg-1),
+    var(--bg-1) 20px,
+    var(--bg-2) 20px,
+    var(--bg-2) 40px
   );
   animation: move-stripes 5s linear infinite;
+  background-size: 56.57px 56.57px;
+}
+
+.stripes-sm {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--bg-1),
+    var(--bg-1) 5px,
+    var(--bg-2) 5px,
+    var(--bg-2) 10px
+  );
   background-size: 56.57px 56.57px;
 }
 

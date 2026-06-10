@@ -38,15 +38,15 @@
     .hi-right {
         display: flex;
         align-items: center;
-        border: 1px solid var(--col-bg2);
+        border: 1px solid var(--bg-2);
         border-radius: var(--border-panel);
-        background-color: var(--black);
+        background-color: var(--bg-0);
         padding: 0px 4px;
         padding-left: 6px;
     }
 
     .hi_l {
-        color: var(--accent);
+        color: var(--col-accent);
     }
 
     .hi_hi {
@@ -55,15 +55,15 @@
     }
 
     .hi_qwik {
-        color: var(--accent);
-        border: 1px solid var(--col-bg2);
+        color: var(--col-accent);
+        border: 1px solid var(--bg-2);
         border-radius: var(--border-panel);
-        background-color: var(--black);
+        background-color: var(--bg-0);
         padding: 0px 4px;
     }
 
     .flag-ca {
-        color: #D80621;
+        color: var(--flag-ca);
         font-size: var(--font-header);
     }
 
