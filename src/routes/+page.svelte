@@ -2,7 +2,9 @@
     import Folder from "../lib/Folder.svelte";
     import Header from "../lib/Header.svelte";
     import Hi from "../lib/Hi.svelte";
+    import Links from "../lib/Links.svelte";
     import Skills from "../lib/Skills.svelte";
+    import Status from "../lib/Status.svelte";
 </script>
 
 <div class="content">
@@ -16,8 +18,8 @@
             for you, not to raise a company's net worth.
         </p>
         <Skills/>
-        <Folder name="Links">
-
+        <Folder name="Links" open=true>
+           <Links/>
         </Folder>
         <Folder name="88x31s">
 
@@ -25,7 +27,7 @@
         <Folder name="etc" open=true>
 
         </Folder>
-        <p>my hands are typing words long words that will take up space wooords</p>
+        <Status/>
     </div>
 </div>
 
