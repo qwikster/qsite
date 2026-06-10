@@ -1,4 +1,5 @@
 <script>
+    import Etc from "../lib/Etc.svelte";
     import Folder from "../lib/Folder.svelte";
     import Header from "../lib/Header.svelte";
     import Hi from "../lib/Hi.svelte";
@@ -25,7 +26,7 @@
 
         </Folder>
         <Folder name="etc" open=true>
-
+            <Etc/>
         </Folder>
         <Status/>
     </div>

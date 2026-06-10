@@ -69,6 +69,7 @@
         display: flex;
         flex-direction: column;
         margin: var(--pad-ui) 0px;
+        margin-bottom: 12px;
         gap: var(--pad-text);
     }
 
