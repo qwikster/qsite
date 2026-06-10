@@ -4,7 +4,8 @@
 </script>
 
 <div class="folder">
-    <button class="stripes-sm" aria-expanded={open} on:click={() => open = !open}>{name}
+    <button class="stripes-sm" aria-expanded={open} on:click={() => open = !open}>
+        <span class="name">{name}</span>
         <svg viewBox="0 0 20 20" fill="none" >
         <path class="vert" d="M10 1V19" stroke="var(--col-header)" stroke-width="2"/>
         <path d="M1 10L19 10" stroke="var(--col-header)" stroke-width="2"/>
@@ -25,7 +26,13 @@
         margin: var(--pad-ui) 0px;
     }
 
+    .name {
+        padding-left: 10px;
+        align-self: flex-start;
+    }
+
     button {
+        display: flex;
         flex: 1;
         border: none;
         border-radius: var(--round-panel);
@@ -33,6 +40,7 @@
         font-family: var(--ff-button);
         color: var(--col-body);
         padding: var(--pad-text) 0px;
+        justify-content: space-between;
     }
 
     button[aria-expanded="true"] {
@@ -47,5 +55,6 @@
     svg {
         height: 12px;
         width: 12px;
+        padding-right: 10px;
     }
 </style>

@@ -4,11 +4,10 @@
   let date = "loading"
   let error = ""
 
-
   onMount(async () => {
     try {
       const response = await fetch(
-        `https://github.com/qwikster/qsite/commits?per_page=1`,
+        `https://api.github.com/repos/qwikster/qsite/commits`,
         {headers: {"Accept": "application/vnd.github+json"}}
       );
       if (!response.ok) throw new Error(`failed to fetch GitHub info: ${response.statusText}`)
@@ -16,7 +15,7 @@
 
       if (data && data.length > 0) {
         id = data[0].sha.substring(0, 7);
-        date = new Date(data[0].commit.author.date).toLocaleString()
+        date = new Date(data[0].commit.author.date).toLocaleTimeString()  + " " + new Date(data[0].commit.author.date).toLocaleDateString()
       }
     } catch (err) {
       error = err.message;
@@ -30,8 +29,8 @@
 {:else}
     <p>
         on commit
-        <b>{id}</b> at
-        <b>{date}</b> on
+        <b style="color: var(--col-body);">{id}</b> at
+        <b style="color: var(--col-body);">{date}</b> on
         <b><a target="_blank" href="https://github.com/qwikster/qsite">qwikster/qsite</a></b>
     </p>
 {/if}
