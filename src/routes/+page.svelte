@@ -1,5 +1,6 @@
 <script>
     import Hi from "../lib/Hi.svelte";
+    import Skills from "../lib/Skills.svelte";
 
     let kikuri = false;
     const logo1 = "/favicon.png";
@@ -33,120 +34,14 @@
             Passionate about supporting and creating hardware or software that works
             for you, not to raise a company's net worth.
         </p>
+        <Skills/>
 
-        <div class="skills">
-            <div class="skill-tier">
-                <div class="skill-desc" style="color: var(--col-ok);">
-                    <div class="skill-icon"></div>
-                    <div class="skill-text">good at!</div>
-                </div>
-                <div class="skill-list">
-                    <div class="skill-line" style="color: var(--bg-ok);">
-                        <span class="skill">aaaa</span>
-                        <span class="skill">aaaaaa</span>
-                        <span class="skill">aaaaaaaaa</span>
-                        <span class="skill">aaaaaaaa</span>
-                        <span class="skill">aaaa</span>
-                        <span class="skill">aaaaaaaaaaaaaa</span>
-                        <span class="skill">aaaaaaaa</span>
-                        <span class="skill">aaaaaaaaaaaaaaaaa</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-tier">
-                <div class="skill-desc" style="color: var(--col-meh);">
-                    <div class="skill-icon"></div>
-                    <div class="skill-text">learn as needed</div>
-                </div>
-                <div class="skill-list">
-                    <div class="skill-line" style="color: var(--bg-meh);">
-                        <span class="skill">jjjjjjjjjjjjjjjj</span>
-                        <span class="skill">jjj</span>
-                        <span class="skill">jjjjjjjjjjj</span>
-                        <span class="skill">jjjjj</span>
-                        <span class="skill">jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</span>
-                        <span class="skill">jjjjjjjjjjjj</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-tier">
-                <div class="skill-desc" style="color: var(--col-wait);">
-                    <div class="skill-icon"></div>
-                    <div class="skill-text">still learning</div>
-                </div>
-                <div class="skill-list">
-                    <div class="skill-line" style="color: var(--bg-wait);">
-                        <span class="skill">eeeeee</span>
-                        <span class="skill">eeeeeeeee</span>
-                        <span class="skill">eeeeee</span>
-                        <span class="skill">eeeeeeee</span>
-                        <span class="skill">eeee</span>
-                        <span class="skill">eeeeeeeeeee</span>
-                        <span class="skill">eeeeee</span>
-                        <span class="skill">eeeeeeeeeeeeeeeeeeee</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-tier">
-                <div class="skill-desc" style="color: var(--col-bad);">
-                    <div class="skill-icon"></div>
-                    <div class="skill-text">prefer not</div>
-                </div>
-                <div class="skill-list">
-                    <div class="skill-line" style="color: var(--bg-bad);">
-                        <span class="skill">ggggggg</span>
-                        <span class="skill">ggggg</span>
-                        <span class="skill">ggg</span>
-                        <span class="skill">ggggg</span>
-                        <span class="skill">ggggggg</span>
-                        <span class="skill">gggg</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
         <p>my hands are typing words long words that will take up space wooords</p>
     </div>
 </div>
 
 <style>
-    .skills {
-        display: flex;
-        flex-direction: column;
-        margin: var(--pad-ui) 0px;
-        gap: var(--pad-text);
-    }
-
-    .skill-tier {
-        display: flex;
-    }
-
-    .skill-desc {
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        background-color: var(--bg-0);
-        font-family: var(--ff-info);
-        font-size: var(--font-small);
-        border: 1px solid var(--bg-2);
-        border-radius: var(--border-panel);
-        padding: var(--pad-text);
-        margin-right: var(--pad-ui);
-        justify-content: center;
-    }
-
-    .skill {
-        background-color: var(--bg-2);
-        padding: var(--pad-tiny) var(--pad-text);
-        border: 1px solid var(--bg-4);
-        border-radius: var(--border-panel);
-        font-family: var(--ff-info);
-        font-size: var(--font-tiny);
-        display: inline-block;
-        margin-bottom: 1px;
-    }
-
     .content {
         max-width: 640px;
         margin-bottom: 30vh;
