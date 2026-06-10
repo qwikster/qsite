@@ -3,10 +3,10 @@
     "Linux", "Python", "HTML + CSS", "Sysadmin", "3D Printing"
   ]},
   { "tier": "meh", "items": [
-    "Svelte (Kit)", "FastAPI", "Arduino", "Networking", "JavaScript", "Onshape"
+    "Svelte (Kit)", "FastAPI", "Arduino", "Networking", "JS", "Onshape"
   ]},
   { "tier": "wait", "items": [
-    "Rust", "Engineering", "Auto Repair", "C++", "Godot/GDScript", "TypeScript"
+    "Rust", "Engineering", "Auto Repair", "C++", "Godot", "TypeScript"
   ]},
   { "tier": "bad", "items": [
     "React", "NodeJS", "Electron", "Generative AI"

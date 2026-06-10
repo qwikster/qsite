@@ -28,7 +28,7 @@
     </div>
     <div class="skill-tier">
         <div class="skill-desc" style="color: var(--col-meh);">
-            <div class="skill-text">󰜥&nbsp;learn as&nbsp;needed</div>
+            <div class="skill-text">󰜥&nbsp;learning as&nbsp;needed</div>
         </div>
         <div class="skill-list">
             <div class="skill-line" style="color: var(--bg-meh);">
@@ -110,6 +110,5 @@
         font-family: var(--ff-info);
         font-size: var(--font-tiny);
         display: inline-block;
-        margin-bottom: 1px;
     }
 </style>

@@ -11,13 +11,13 @@
 
     --col-ok: #14F5AA;
     --col-meh: #FFC60A;
-    --col-wait: #44554a;
-    --col-bad: #AA2222;
+    --col-wait: #7D8A81;
+    --col-bad: #DD3333;
 
-    --bg-ok: #14F5A488;
-    --bg-meh: #FFC60A88;
-    --bg-wait: #44554a;
-    --bg-bad: #AA222288;
+    --bg-ok: #14F5A499;
+    --bg-meh: #FFC60A99;
+    --bg-wait: #7D8A81;
+    --bg-bad: #DD3333;
 
     --bg-0: #000000;
     --bg-1: #121714;
@@ -30,7 +30,7 @@
 
     --font-header: 20px;
     --font-text: 18px;
-    --font-small: 16px;
+    --font-small: 15px;
     --font-tiny: 12px;
 
     --ff-header: 'ProFont';
