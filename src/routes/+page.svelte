@@ -5,6 +5,7 @@
     import Hi from "../lib/Hi.svelte";
     import Links from "../lib/Links.svelte";
     import Skills from "../lib/Skills.svelte";
+    import Tile88x31s from "../lib/Tile88x31s.svelte";
 </script>
 
 <div class="content">
@@ -21,8 +22,8 @@
         <Folder name="Links" open=true>
            <Links/>
         </Folder>
-        <Folder name="88x31s">
-
+        <Folder name="88x31s" open=true>
+            <Tile88x31s/>
         </Folder>
         <Folder name="etc" open=true>
             <Etc/>
