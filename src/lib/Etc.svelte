@@ -2,9 +2,39 @@
   import { onMount } from "svelte";
   let time = $state(new Date());
 
+  // svelte-ignore non_reactive_update
   let id = "loading"
+  // svelte-ignore non_reactive_update
   let date = "loading"
   let error = ""
+  let slackID = "U091JJ2JF8E"
+
+  function format(seconds) {
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    return `${h}h&nbsp;${m}m`;
+  }
+
+  async function get_hackatime(id) {
+    const alltime = await fetch(`https://hackatime.hackclub.com/api/v1/users/${id}/stats`);
+    const alltimedata = await alltime.json()
+
+    const weektime = new Date();
+    weektime.setDate(weektime.getDate() - 7)
+    const param_start = weektime.toISOString().split("T")[0];
+    const param_end = new Date().toISOString().split("T")[0];
+
+    const week = await fetch(`https://hackatime.hackclub.com/api/v1/users/${id}/stats?start_date=${param_start}&end_date=${param_end}`)
+    const weekdata = await week.json()
+
+    const alltime_seconds = alltimedata.data.total_seconds || 0;
+    const week_seconds = weekdata.data.total_seconds || 0;
+
+    return {
+      total: format(alltime_seconds),
+      week: format(week_seconds)
+    }
+  }
 
   onMount(async () => {
     try {
@@ -17,7 +47,11 @@
 
       if (data && data.length > 0) {
         id = data[0].sha.substring(0, 7);
-        date = new Date(data[0].commit.author.date).toLocaleTimeString()  + " " + new Date(data[0].commit.author.date).toLocaleDateString()
+        date = new Date(data[0].commit.author.date).toLocaleTimeString(
+          [], {hour12: true, timeStyle: 'short'}
+        )
+        + " " +
+        new Date(data[0].commit.author.date).toLocaleDateString();
       }
     } catch (err) {
       error = err.message;
@@ -30,19 +64,42 @@
     }, 1000);
     return() => clearInterval(interval)
   })
+
+  let stats = get_hackatime(slackID);
 </script>
 
 <div class="etc">
+    {#await stats}
+        <div class="item hackatime">loading Hackatime...</div>
+    {:then data}
+        <div class="item hackatime">
+            <span class="code-time">
+                 coding time
+            </span>
+            <div class="time-item">
+                <span>all:&nbsp;</span>
+                <span class="time">{@html data.total}</span>
+            </div>
+            <div class="time-item">
+                <span>week:&nbsp;</span>
+                <span class="time">{@html data.week}</span>
+            </div>
+        </div>
+    {:catch time_error}
+        <div class="item hackatime">error loading Hackatime :(</div>
+    {/await}
+
     <div class="item github">
         <div>
             commit <b class="time">{id}</b> at
         </div>
         <div>
-            <b class="time">{date}</b> on
+            <b class="time">{date}</b>
         </div>
         <div class="git-link">
+            on
             <span class="icon" style="color: #F2F5F3;"></span>
-            <b><a target="_blank" href="https://github.com/qwikster/qsite">qwikster/qsite</a></b>
+            <b><a target="_blank" href="https://github.com/qwikster/qsite">qwikster/<wbr>qsite</a></b>
         </div>
     </div>
     <div class="item timezone">
@@ -85,9 +142,26 @@
         transition: ease 0.2s all;
     }
 
+    .code-time {
+        border-bottom: var(--border-hr) solid var(--col-secondary);
+        align-self: center;
+        margin-right: 6px;
+        margin-bottom: 2px;
+        font-size: var(--font-tiny);
+        color: var(--col-ok);
+    }
+
     .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding-right: var(--pad-ui);
         border-right: var(--border-hr) solid var(--col-header);
+    }
+
+    .item:last-child {
+        border-right: none;
+        padding-right: none;
     }
 
     .tz {
@@ -100,6 +174,11 @@
         justify-content: center;
         gap: var(--pad-text);
         align-items: center;
+    }
+
+    .time-item {
+        display: flex;
+        justify-content: space-between;
     }
 
     .icon { font-size: var(--font-header); }
