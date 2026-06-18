@@ -15,14 +15,14 @@
         <p style="text-align: left;">
             Working on being able to passably do as many useful things as possible, and
             is currently at least okay at a decent number!
-            Passionate about supporting and creating hardware or software that works
+            I try to support and create projects that work
             for you, not to raise a company's net worth.
         </p>
         <Skills/>
         <Folder name="Links" open=true>
-           <Links/>
+            <Links/>
         </Folder>
-        <Folder name="88x31s" open=true>
+        <Folder name="88x31s">
             <Tile88x31s/>
         </Folder>
         <Folder name="etc" open=true>
