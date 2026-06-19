@@ -6,6 +6,29 @@
     import Links from "../lib/Links.svelte";
     import Skills from "../lib/Skills.svelte";
     import Tile88x31s from "../lib/Tile88x31s.svelte";
+
+    import { onMount } from "svelte";
+    let images = $state([])
+    let tools = $state([])
+
+    onMount(async () => {
+      try {
+        const response = await fetch('/tools.json');
+        images = await response.json()
+        tools = shuffle(images)
+      } catch (error) {
+        console.error("Failed to load tools:", error)
+      }
+    });
+
+    function shuffle(array) {
+      let shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+     	const j = Math.floor(Math.random() * (i + 1));
+     	[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    }
 </script>
 
 <div class="content">
@@ -19,25 +42,46 @@
             for you, not to raise a company's net worth.
         </p>
         <Skills/>
-        <Folder name="Links" open=true>
+        <Folder name="Links">
             <Links/>
         </Folder>
         <Folder name="88x31s">
             <Tile88x31s/>
         </Folder>
-        <Folder name="etc" open=true>
+        <Folder name="etc">
             <Etc/>
         </Folder>
+        <div class="tools">
+            <div class="track">
+                {#await tools}
+                    <span>loading tools...</span>
+                {:then}
+                    {#each tools as tool}
+                        <div class="slide">
+                            <a href={tool.url} title={tool.alt} target="_blank"><img width="48px" alt={tool.alt} src={tool.img}></a>
+                        </div>
+                    {/each}
+                    <!-- infinite scroll -->
+                    {#each tools as tool}
+                        <div class="slide">
+                            <a href={tool.url} title={tool.alt} target="_blank"><img width="48px"  alt={tool.alt} src={tool.img}></a>
+                        </div>
+                    {/each}
+                {/await}
+            </div>
+        </div>
     </div>
 </div>
 
 <style>
     .content {
-        max-width: 640px;
+        max-width: min(640px, 90vw);
         margin-bottom: 30vh;
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 20px;
+        width: calc(100% - 40px);
+        min-width: 0;
     }
 
     .panel {
@@ -45,6 +89,7 @@
         padding: var(--pad-ui);
         border-radius: var(--round-panel);
         background-color: var(--bg-1);
+        min-width: 0;
     }
 
     p {
@@ -54,5 +99,43 @@
         margin: 0px;
         padding: 2px;
         line-height: 1.3;
+    }
+
+    .tools {
+        overflow: clip;
+        width: 100%;
+    }
+
+    .track {
+        display: flex;
+        flex-wrap: nowrap;
+        width: max-content;
+        animation: scroll 20s linear infinite;
+    }
+
+    .track:hover { animation-play-state: paused; }
+
+    .slide {
+        width: 54px;
+        box-sizing: border-box;
+        flex: 0 0 54px;
+    }
+
+    .slide img {
+        border-radius: var(--round-panel);
+        display: block;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
     }
 </style>

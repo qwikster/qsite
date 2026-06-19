@@ -1,6 +1,6 @@
 <script>
     export let name
-    export let open = false
+    export let open = true
 </script>
 
 <div class="folder">

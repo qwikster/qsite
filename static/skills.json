@@ -9,6 +9,6 @@
     "Rust", "Engineering", "Auto Repair", "C++", "Godot", "TypeScript"
   ]},
   { "tier": "bad", "items": [
-    "React", "NodeJS", "Electron", "Generative AI"
+    "JS/TS backend", "Electron", "Generative AI"
   ]}
 ]

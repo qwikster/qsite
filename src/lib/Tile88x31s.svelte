@@ -21,23 +21,18 @@
       }
       return shuffled;
     }
-
-    let copied = false
-    function copy() {
-
-    }
-
 </script>
 
 <div class="content">
     <div class="me">
+        <div class="flavor">use mine!</div>
         <!-- svelte-ignore a11y_missing_attribute -->
-        <a href="https://qwik.top" title="now with 27% more doid per doid!" target="_blank"><img src="/88x31s/qwik.top.png"></a>
-        <div>
-            <span class="flavor">add my 88x31:</span>
-            <button onclick={copy}>
-                {copied ? "copied!" : "copy html"}
-            </button>
+        <div class="logobar">
+            <span class="arrows">󰜴</span>
+            <div>
+                <a class="logo" href="https://qwik.top" title="now with 27% more doid per doid!" target="_blank"><img src="/88x31s/qwik.top.png"></a>
+            </div>
+            <span class="arrows">󰜱</span>
         </div>
     </div>
     <div class="images">
@@ -71,36 +66,35 @@
 
     .me {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        gap: var(--pad-ui);
         align-self: center;
-        margin-bottom: var(--pad-ui);
-        padding-bottom: var(--pad-ui);
-        border-bottom: 2px solid #FFF;
+        margin-bottom: 2px;
     }
 
     .flavor {
-        border-bottom: var(--border-hr) solid var(--col-secondary);
-        align-self: center;
-        margin-right: 6px;
+        font-family: var(--ff-info);
         margin-bottom: 2px;
         font-size: var(--font-tiny);
         color: var(--col-ok);
+        align-self: center;
     }
 
-    button {
-        background-color: var(--bg-2);
-        border: var(--border-small) solid var(--col-border);
-        padding: 2px 4px;
-        border-radius: var(--round-button);
+    .logo {
+        align-self: center;
+    }
+
+    .logobar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--pad-ui);
+    }
+
+    .arrows {
+        font-family: var(--ff-header);
+        font-size: var(--font-header);
         color: var(--col-accent);
-        font-family: var(--ff-button);
-        font-size: var(--font-tiny);
-        transition: 0.2s ease all;
-    }
-
-    button:hover {
-        background-color: var(--bg-hover);
-        border-color: var(--col-hover);
+        padding-bottom: 6px;
     }
 </style>
