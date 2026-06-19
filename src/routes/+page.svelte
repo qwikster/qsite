@@ -51,6 +51,7 @@
         <Folder name="etc">
             <Etc/>
         </Folder>
+        <p class="footer"> icons and 88x31s all have hover text and links!</p>
         <div class="tools">
             <div class="track">
                 {#await tools}
@@ -58,18 +59,19 @@
                 {:then}
                     {#each tools as tool}
                         <div class="slide">
-                            <a href={tool.url} title={tool.alt} target="_blank"><img width="48px" alt={tool.alt} src={tool.img}></a>
+                            <a href={tool.url} title={tool.alt} target="_blank"><img width="40px" alt={tool.alt} src={tool.img}></a>
                         </div>
                     {/each}
                     <!-- infinite scroll -->
                     {#each tools as tool}
                         <div class="slide">
-                            <a href={tool.url} title={tool.alt} target="_blank"><img width="48px"  alt={tool.alt} src={tool.img}></a>
+                            <a href={tool.url} title={tool.alt} target="_blank"><img width="40px"  alt={tool.alt} src={tool.img}></a>
                         </div>
                     {/each}
                 {/await}
             </div>
         </div>
+        <p class="footer" style="color: var(--col-dim);">Made with <span style="color: var(--flag-ca);"></span>, 2026 | Uses <a href="GPLv3.md" target="_blank">GPL v3.0</a></p>
     </div>
 </div>
 
@@ -104,26 +106,44 @@
     .tools {
         overflow: clip;
         width: 100%;
+        padding: var(--pad-ui) 0;
     }
 
     .track {
         display: flex;
         flex-wrap: nowrap;
         width: max-content;
-        animation: scroll 20s linear infinite;
+        animation: scroll 30s linear infinite;
     }
 
     .track:hover { animation-play-state: paused; }
 
     .slide {
-        width: 54px;
+        width: 48px;
         box-sizing: border-box;
-        flex: 0 0 54px;
+        flex: 0 0 48px;
     }
 
     .slide img {
         border-radius: var(--round-panel);
         display: block;
+    }
+
+    .footer {
+        font-family: var(--ff-info);
+        margin-bottom: 2px;
+        font-size: var(--font-tiny);
+        color: var(--col-ok);
+        align-self: center;
+        text-align: center;
+    }
+
+    a {
+        color: var(--col-hover);
+        transition: all 0.2s ease;
+    }
+    a:hover {
+        color: var(--col-ok);
     }
 
     *, *::before, *::after {

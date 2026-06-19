@@ -5,18 +5,18 @@
     "img": "/tools/archlinux.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://vivaldi.com",
+    "alt": "very customizable browser, no AI",
     "img": "/tools/vivaldi.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://vesktop.dev",
+    "alt": "modded Discord client for Linux",
     "img": "/tools/vesktop.png"
   },
   {
     "url": "",
-    "alt": "",
+    "alt": "much cleaner and faster than vscode",
     "img": "/tools/zed.png"
   },
   {
