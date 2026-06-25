@@ -15,153 +15,148 @@
     "img": "/tools/vesktop.png"
   },
   {
-    "url": "",
+    "url": "https://zed.dev",
     "alt": "much cleaner and faster than vscode",
     "img": "/tools/zed.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://sw.kovidgoyal.net/kitty/",
+    "alt": "some cool features idk",
     "img": "/tools/kitty.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://hypr.land",
+    "alt": "looks slightly better than sway, tm",
     "img": "/tools/hyprland.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://wikipedia.org",
+    "alt": "first source for information",
     "img": "/tools/wikipedia.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://tetr.io",
+    "alt": "sentenced to 10 quad 40l",
     "img": "/tools/tetrio.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://github.com/wwmm/easyeffects",
+    "alt": "makes my laptop actually sound good",
     "img": "/tools/easyeffects.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://fishshell.com",
+    "alt": "this shell seems fishy",
     "img": "/tools/fish.gif"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://pixelorama.org",
+    "alt": "totally haven't spent 4 hours making a tetris 88x31 no",
     "img": "/tools/pixelorama.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://github.com/qwikster",
+    "alt": "look it works okay?",
     "img": "/tools/github.png"
   },
   {
     "url": "",
-    "alt": "",
+    "alt": "I want to cheese",
     "img": "/tools/hackclub.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://www.raspberrypi.com",
+    "alt": "you are inside of my rpi.",
     "img": "/tools/rpi.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://406.fail",
+    "alt": "This website was NOT vibecoded",
     "img": "/tools/noai.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://www.youtube.com/shorts/BMInQlMsSoY",
+    "alt": "dr pebba",
     "img": "/tools/drpepper.jpg"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://archlinux.org",
+    "alt": "dm me i'll teach you to linux /srs",
     "img": "/tools/nowindows.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://frame.work",
+    "alt": "if you put windows on it i'm sending a penguin to your house",
     "img": "/tools/framework.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://roll20.net",
+    "alt": "Plays a dwarf      is stupid",
     "img": "/tools/dnd.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://svelte.dev",
+    "alt": "this website is written in Svelte",
     "img": "/tools/svelte.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://pypi.org/user/qwik/",
+    "alt": "fairly powerful, i'm happy",
     "img": "/tools/python.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://prusa3d.com",
+    "alt": "Make really good printers I'd love to have",
     "img": "/tools/prusa.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://youtu.be/KwnBZZ7_FGg",
+    "alt": "sillgy pengin",
     "img": "/tools/tux.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://youtu.be/f1VajMehM58",
+    "alt": "does nothing, wins",
     "img": "/tools/steam.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://marathon.bungie.org/story/",
+    "alt": "Escape will make me God.",
     "img": "/tools/marathon.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://c.xkcd.com/random/comic/",
+    "alt": "self-nerdsnipe",
     "img": "/tools/xkcd.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://qwave.qwik.top/app",
+    "alt": "password and username 'qwik'",
     "img": "/tools/qwave.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://youtu.be/B3v5XFmiv34",
+    "alt": "debian, the operating system for lesbians",
     "img": "/tools/debian.png"
   },
   {
-    "url": "",
-    "alt": "",
-    "img": "/tools/kikuri.png"
-  },
-  {
-    "url": "",
-    "alt": "",
+    "url": "https://store.steampowered.com/app/2240620/UNBEATABLE/",
+    "alt": "You know, when you explain an idea, the idea fundamentally changes. And that idea changes you in return.",
     "img": "/tools/unbeatable.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "https://android.stackexchange.com/questions/26535/where-can-i-find-a-list-of-the-default-emoticons-on-ice-cream-sandwich",
+    "alt": "emo_im_happy",
     "img": "/tools/doid.gif"
   },
   {
     "url": "",
-    "alt": "",
+    "alt": "emo_im_money_mouth",
     "img": "/tools/doidmoney.png"
   },
   {
-    "url": "",
-    "alt": "",
+    "url": "http://wayland.fyi",
+    "alt": "shes just like me fr,,",
     "img": "/tools/gayland.png"
   }
 ]

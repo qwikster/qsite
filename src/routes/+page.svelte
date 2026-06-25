@@ -113,7 +113,7 @@
         display: flex;
         flex-wrap: nowrap;
         width: max-content;
-        animation: scroll 30s linear infinite;
+        animation: scroll 40s linear infinite;
     }
 
     .track:hover { animation-play-state: paused; }
