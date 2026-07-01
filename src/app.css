@@ -65,6 +65,7 @@ body {
     src: url('/src/assets/ProFont.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -72,6 +73,7 @@ body {
     src: url('/src/assets/Exo2.ttf') format('truetype');
     font-style: normal;
     font-weight: 500;
+    font-display: swap;
 }
 
 .stripes {
