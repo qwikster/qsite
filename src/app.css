@@ -62,7 +62,7 @@ body {
 
 @font-face {
     font-family: 'ProFont';
-    src: url('/src/assets/ProFont.ttf') format('truetype');
+    src: url('/src/assets/ProFont.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
     font-display: swap;
@@ -70,7 +70,7 @@ body {
 
 @font-face {
     font-family: 'Exo2';
-    src: url('/src/assets/Exo2.ttf') format('truetype');
+    src: url('/src/assets/Exo2.woff2') format('woff2');
     font-style: normal;
     font-weight: 500;
     font-display: swap;
