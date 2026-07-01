@@ -9,14 +9,13 @@
     }
 </script>
 
+<!-- with links:
 <div class="header">
     <hr style="border-color: transparent;">
     <button class="button" title="(blog)">weblog</button>
     <hr>
     <div class="logo">
         <span class="arrows">󰜱</span>
-        <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
-        <!-- svelte-ignore a11y_click_events_have_key_events -->
         <img src="{source}" alt="logo!" width="64px" on:click={chlogo} style="cursor: pointer;">
         <span class="arrows">󰜴</span>
     </div>
@@ -24,11 +23,25 @@
     <button class="button" title="(projects)">things</button>
     <hr style="border-color: transparent;">
 </div>
+-->
+
+<div class="header">
+    <hr style="border-color: transparent;">
+    <hr>
+    <div class="logo">
+        <span class="arrows">󰜴</span>
+        <img src="{source}" alt="logo!" width="64px" on:click={chlogo} style="cursor: pointer;">
+        <span class="arrows">󰜱</span>
+    </div>
+    <hr>
+    <hr style="border-color: transparent;">
+</div>
 
 <style>
     .header {
         display: grid;
-        grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+        /* grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; */
+        grid-template-columns: 0.6fr 1fr auto 1fr 0.6fr;
         align-items: center;
         margin-bottom: var(--pad-ui);
     }

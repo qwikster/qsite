@@ -84,6 +84,7 @@
         margin-top: 20px;
         width: calc(100% - 40px);
         min-width: 0;
+        overflow-x: hidden;
     }
 
     .panel {

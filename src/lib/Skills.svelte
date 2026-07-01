@@ -103,6 +103,24 @@
         gap: var(--pad-tiny);
     }
 
+    @media (max-width: 559px) {
+        .skill-tier {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: var(--pad-ui);
+            align-items: center;
+        }
+        .skill-desc {
+            margin-bottom: var(--pad-text);
+            justify-content: center;
+            max-width: 300px;
+            width: 90%;
+        }
+        .skill-line {
+            justify-content: center;
+        }
+    }
+
     .skill {
         background-color: var(--bg-2);
         padding: var(--pad-tiny) var(--pad-text);

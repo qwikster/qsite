@@ -78,4 +78,14 @@
         font-size: var(--font-text);
         font-weight: bold;
     }
+
+    @media (max-width: 380px) {
+        .hi {
+            font-size: var(--font-text);
+        }
+        .flag-timezone {
+            font-size: var(--font-tiny);
+        }
+    }
+
 </style>

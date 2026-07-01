@@ -5,14 +5,14 @@
         <div class="email link">
             <span class="icon" style="color: var(--col-accent);">󰇮</span>
             <span class="title">You can email</span>
-            <div class="email">
+            <div class="email info">
                 <a href="mailto:me@qwik.top" ><span class="code">me@qwik.top</span></a>
             </div>
         </div>
         <div class="discord link">
             <span class="icon" style="color: #5865F2;"></span>
             <span class="title">Fastest response</span>
-            <div class="discord-link">
+            <div class="discord-link info">
                 <a target="_blank" href="https://discord.com/users/721037730905325628" ><span class="code">i_qwik</span></a>
                 on Discord
             </div>
@@ -20,7 +20,7 @@
         <div class="github link">
             <span class="icon" style="color: #F2F5F3;"></span>
             <span class="title">My GitHub</span>
-            <div class="email">
+            <div class="email info">
                 <a target="_blank" href="https://github.com/qwikster" ><span class="code">qwikster</span></a>
             </div>
         </div>
@@ -44,13 +44,13 @@
         display: flex;
         text-align: center;
         justify-content: center;
-        gap: 12px;
         padding: 12px 0px;
     }
 
     .link {
         display: flex;
         flex-direction: column;
+        padding: 0px 12px;
     }
 
     .icon {
@@ -63,6 +63,7 @@
 
     .request {
         font-family: var(--ff-body);
+        padding: 0px 12px;
         padding-bottom: var(--pad-ui);
     }
 
@@ -80,7 +81,37 @@
 
     .discord {
         padding: 0px 12px;
-        border-left: var(--border-hr) solid var(--col-header);
-        border-right: var(--border-hr) solid var(--col-header);
+    }
+
+    @media (min-width: 560px) {
+        .link {
+            border-right: var(--border-hr) solid var(--col-header);
+        }
+        .link:last-child {
+            border-right: none;
+        }
+    }
+
+    @media (max-width: 559px) {
+        .link-list {
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            padding-bottom: 0px;
+        }
+        .link {
+            display: flex;
+            width: 100%;
+            max-width: 200px;
+            border-bottom: var(--border-hr) solid var(--col-header);
+            padding-bottom: 8px;
+        }
+        .link:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .info {
+            padding-bottom: 8px;
+        }
     }
 </style>
